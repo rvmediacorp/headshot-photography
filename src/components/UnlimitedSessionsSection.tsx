@@ -75,21 +75,21 @@ export default function UnlimitedSessionsSection() {
           ))}
 
           {/* Google Rating Section - Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 md:flex justify-between items-center bg-gradient-to-t from-black/95 via-black/70 to-transparent p-4 border-b-[6px] border-[#209ccb] rounded-lg mb-[-49px] pt-[350px]">
+          <div className="absolute bottom-0 left-0 right-0 md:flex justify-between items-center bg-gradient-to-t from-black/95 via-black/70 to-transparent p-4 border-b-[8px] border-[#209ccb] rounded-lg mb-[-49px] pt-[350px]">
             <div className="flex items-center justify-center">
               <Image
                 src="/images/google-logo.png"
                 alt="Google logo"
-                width={40}
-                height={40}
+                width={70}
+                height={70}
                 className="mr-2"
               />
               <div>
-                <p className="font-bold text-2xl lg:text-lg text-white">Google Rating</p>
+                <p className="font-bold text-xl lg:text-lg text-white">Google Rating</p>
                 <div className="flex items-center font-bold text-lg">
-                  <span className="text-yellow-400 mr-1 font-bold text-3xl">4.8</span>
+                  <span className="text-[#fda400] mr-1 font-bold text-3xl">4.8</span>
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="w-6 text-[#fda400]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -98,10 +98,10 @@ export default function UnlimitedSessionsSection() {
             </div>
 
             <div className="space-x-4 mt-4 grid justify-center lg:block">
-              <Button variant="outline" className="mb-4  w-[300px] lg:w-[180px] lg:mr-4 font-bold text-xs text-white bg-[#247ba0] border-[#247ba0] rounded-[20px] px-6">
+              <Button variant="outline" className="mb-4  w-[270px] lg:w-[180px] lg:mr-4 font-bold text-[0.8rem] text-white bg-[#247ba0] border-[#247ba0] rounded-[30px] p-6">
                 GET A FREE QUOTE
               </Button>
-              <Button className="!ml-[0] font-bold text-xs text-white bg-[#131313] border-[#247ba0] border-[1px] rounded-[20px] px-6">
+              <Button className="!ml-[0] font-bold text-[0.8rem] text-white bg-[#131313] border-[#247ba0] border-[2px] rounded-[30px] p-6">
                 BOOK NOW
               </Button>
             </div>
