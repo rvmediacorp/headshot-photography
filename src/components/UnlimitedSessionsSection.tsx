@@ -18,7 +18,7 @@ const headshots = [
 
 export default function UnlimitedSessionsSection() {
   return (
-    <section className="relative py-24 bg-[#0e0e0e] text-white">
+    <section className="relative pt-20 pb-10 bg-[#0e0e0e] text-white">
       <div className="container mx-auto overflow-hidden">
         <motion.h2
           className="text-3xl md:text-4xl text-center mb-4 bodoni-moda !text-white"
@@ -63,18 +63,19 @@ export default function UnlimitedSessionsSection() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+            // style={{ height: '100%' }}
             >
               <Image
                 src={headshot.src}
                 alt={headshot.alt}
                 fill
-                className="lg:object-contain transition-transform duration-300 hover:scale-110"
+                className="lg:object-contain transition-transform duration-300"
               />
             </motion.div>
           ))}
 
           {/* Google Rating Section - Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 md:flex justify-between items-center bg-gradient-to-t from-black via-black to-transparent p-4 border-b-[5px] border-[#209ccb]  rounded-lg mb-[-49px]">
+          <div className="absolute bottom-0 left-0 right-0 md:flex justify-between items-center bg-gradient-to-t from-black/95 via-black/70 to-transparent p-4 border-b-[6px] border-[#209ccb] rounded-lg mb-[-49px] pt-[350px]">
             <div className="flex items-center justify-center">
               <Image
                 src="/images/google-logo.png"
